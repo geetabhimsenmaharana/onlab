@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="onLab experiments — a space for building, testing, and learning through practical projects."
+    >
+
+    <title>Experiment — onLab</title>
+
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Styles -->
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <div id="header"></div>
+
+
+    <!-- Main Content -->
+
+    <main>
+
+        <section
+            class="experiment-page"
+            aria-labelledby="experiment-title"
+        >
+
+            <div class="experiment-content">
+
+                <p class="experiment-label">
+                    EXPERIMENT
+                </p>
+
+                <h1 id="experiment-title">
+                    In<br>
+                    <span>progress.</span>
+                </h1>
+
+                <p class="experiment-description">
+                    A space for documenting what I'm building, testing,
+                    breaking, and learning from through practical work.
+                </p>
+
+                <div class="experiment-status">
+
+                    <span
+                        class="status-dot"
+                        aria-hidden="true"
+                    ></span>
+
+                    Currently being built
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <div id="footer"></div>
+
+
+    <!-- Load Header and Footer -->
+
+    <script>
+
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+            });
+
+
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+
+                document.getElementById("footer").innerHTML = data;
+
+            });
+
+    </script>
+
+
+</body>
+
+</html>

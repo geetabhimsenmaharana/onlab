@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>onLab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>onLab</h1>
+
+                <h2>A space for curiosity</h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- Image Section -->
+        <section class="image-showcase">
+
+            <div class="image-grid">
+
+                <div class="image-item">
+                    <img
+                        src="assets/images/g1.png"
+                        alt="onLab"
+                    >
+                </div>
+
+                <div class="image-item">
+                    <img
+                        src="assets/images/g2.png"
+                        alt="onLab"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+
+    <!-- Load Header and Footer -->
+    <script>
+        fetch("0_default/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        fetch("0_default/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore the technical topics and concepts being studied and developed through onLab."
+    >
+
+    <title>Learning — onLab</title>
+
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Styles -->
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <div id="header"></div>
+
+
+    <!-- Main Content -->
+
+    <main>
+
+        <section class="learning-page">
+
+            <div class="learning-hero">
+
+                <p class="learning-hero-label">
+                    LEARNING
+                </p>
+
+                <h1>
+                    What I'm<br>
+                    <span>exploring.</span>
+                </h1>
+
+                <p>
+                    Technical topics I'm learning, testing, and turning
+                    into practical experiments along the way.
+                </p>
+
+            </div>
+
+
+            <section
+                class="learning-topics"
+                aria-label="Learning topics"
+            >
+
+                <a
+                    href="python.html"
+                    class="learning-card"
+                >
+
+                    <div class="learning-card-number">
+                        00
+                    </div>
+
+                    <div class="learning-card-main">
+
+                        <p class="learning-card-category">
+                            PROGRAMMING
+                        </p>
+
+                        <h2>
+                            Python
+                        </h2>
+
+                        <p class="learning-card-description">
+                            Building a strong foundation in Python through
+                            small programs, exercises, and practical projects.
+                        </p>
+
+                    </div>
+
+                    <div
+                        class="learning-card-arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="generative-ai.html"
+                    class="learning-card"
+                >
+
+                    <div class="learning-card-number">
+                        01
+                    </div>
+
+                    <div class="learning-card-main">
+
+                        <p class="learning-card-category">
+                            GENERATIVE AI
+                        </p>
+
+                        <h2>
+                            Generative AI
+                        </h2>
+
+                        <p class="learning-card-description">
+                            Exploring how modern AI systems retrieve,
+                            understand, generate, and work with information.
+                        </p>
+
+                    </div>
+
+                    <div
+                        class="learning-card-arrow"
+                        aria-hidden="true"
+                    >
+                        ↗
+                    </div>
+
+                </a>
+
+
+                <div class="learning-card learning-card-disabled">
+
+                    <div class="learning-card-number">
+                        02
+                    </div>
+
+                    <div class="learning-card-main">
+
+                        <p class="learning-card-category">
+                            MACHINE LEARNING
+                        </p>
+
+                        <h2>
+                            Machine Learning
+                        </h2>
+
+                        <p class="learning-card-description">
+                            Exploring models, patterns, prediction,
+                            evaluation, and intelligent applications.
+                        </p>
+
+                    </div>
+
+                    <div class="learning-card-status">
+                        COMING SOON
+                    </div>
+
+                </div>
+
+
+                <div class="learning-card learning-card-disabled">
+
+                    <div class="learning-card-number">
+                        03
+                    </div>
+
+                    <div class="learning-card-main">
+
+                        <p class="learning-card-category">
+                            DATA &amp; ANALYTICS
+                        </p>
+
+                        <h2>
+                            Data &amp; Analytics
+                        </h2>
+
+                        <p class="learning-card-description">
+                            Exploring data preparation, analysis,
+                            visualization, and practical decision-making.
+                        </p>
+
+                    </div>
+
+                    <div class="learning-card-status">
+                        COMING SOON
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <p class="learning-footer-note">
+                LEARN → BUILD → UNDERSTAND
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <div id="footer"></div>
+
+
+    <!-- Load Header and Footer -->
+
+    <script>
+
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+            });
+
+
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+
+                document.getElementById("footer").innerHTML = data;
+
+            });
+
+    </script>
+
+
+</body>
+
+</html>

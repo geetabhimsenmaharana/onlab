@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RAG — onLab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                onLab
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="learning.html">Learn</a></li>
+                <li><a href="experiment.html">Experiment</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <article class="rag-page">
+
+            <!-- Hero -->
+            <header class="rag-hero">
+
+                <div class="rag-hero-top">
+
+                    <span class="rag-label">
+                        GENERATIVE AI
+                    </span>
+
+                    <span class="rag-number">
+                        01
+                    </span>
+
+                </div>
+
+                <h1>
+                    Retrieval-Augmented<br>
+                    <span>Generation.</span>
+                </h1>
+
+                <p class="rag-hero-description">
+                    A way to give an AI system relevant information
+                    before it generates an answer.
+                </p>
+
+            </header>
+
+
+            <!-- What is RAG -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    01
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        THE IDEA
+                    </p>
+
+                    <h2>
+                        What is RAG?
+                    </h2>
+
+                    <p>
+                        A language model can generate an answer from
+                        what it learned during training. RAG adds another
+                        step: before answering, the system retrieves
+                        relevant information from an external knowledge
+                        source and gives that information to the model.
+                    </p>
+
+                    <p>
+                        The goal is to help the model generate a response
+                        using information that is relevant to the question
+                        and available at the time of the request.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Flow -->
+            <section class="rag-section rag-flow-section">
+
+                <div class="rag-section-number">
+                    02
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        THE FLOW
+                    </p>
+
+                    <h2>
+                        How it works.
+                    </h2>
+
+
+                    <div class="rag-flow">
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                01
+                            </span>
+
+                            <div>
+                                <strong>User Question</strong>
+                                <p>
+                                    The user asks a question.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                02
+                            </span>
+
+                            <div>
+                                <strong>Retrieve Information</strong>
+                                <p>
+                                    Relevant documents or chunks are found.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                03
+                            </span>
+
+                            <div>
+                                <strong>Add Context</strong>
+                                <p>
+                                    Retrieved information is provided to the LLM.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                04
+                            </span>
+
+                            <div>
+                                <strong>Generate Answer</strong>
+                                <p>
+                                    The model generates a grounded response.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Key Concepts -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    03
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        KEY CONCEPTS
+                    </p>
+
+                    <h2>
+                        What I'm learning.
+                    </h2>
+
+
+                    <div class="rag-concepts">
+
+                        <div class="rag-concept">
+
+                            <span>01</span>
+
+                            <div>
+                                <h3>Chunking</h3>
+
+                                <p>
+                                    Breaking documents into smaller
+                                    pieces that can be retrieved.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>02</span>
+
+                            <div>
+                                <h3>Embeddings</h3>
+
+                                <p>
+                                    Representing text as vectors so
+                                    similar meaning can be compared.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>03</span>
+
+                            <div>
+                                <h3>Vector Search</h3>
+
+                                <p>
+                                    Finding information based on
+                                    semantic similarity.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>04</span>
+
+                            <div>
+                                <h3>Context</h3>
+
+                                <p>
+                                    Supplying relevant retrieved
+                                    information to the language model.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- My Notes -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    04
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        MY NOTES
+                    </p>
+
+                    <h2>
+                        What I understand so far.
+                    </h2>
+
+                    <div class="rag-notes">
+
+                        <p>
+                            RAG connects <strong>retrieval</strong>
+                            with <strong>generation</strong>.
+                        </p>
+
+                        <p>
+                            The quality of the retrieved information
+                            can affect the quality of the final answer.
+                        </p>
+
+                        <p>
+                            RAG is useful when an AI system needs access
+                            to information that may not be contained in
+                            the model's original training data.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Back -->
+            <div class="rag-back">
+
+                <a href="generative-ai.html">
+                    ← Back to Generative AI
+                </a>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-left">
+            <span>© 2026 Geeta Bhimsen Maharana</span>
+        </div>
+
+        <div class="footer-center">
+            <span>Boston, MA</span>
+        </div>
+
+        <div class="footer-links">
+
+            <a
+                href="https://www.linkedin.com/in/geetabhimsenmaharana/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+            <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

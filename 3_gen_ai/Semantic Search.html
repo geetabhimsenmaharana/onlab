@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Semantic Search — onLab</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                onLab
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="learning.html">Learn</a></li>
+                <li><a href="experiment.html">Experiment</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <article class="rag-page">
+
+            <!-- Hero -->
+            <header class="rag-hero">
+
+                <div class="rag-hero-top">
+
+                    <span class="rag-label">
+                        GENERATIVE AI
+                    </span>
+
+                    <span class="rag-number">
+                        04
+                    </span>
+
+                </div>
+
+                <h1>
+                    Semantic<br>
+                    <span>Search.</span>
+                </h1>
+
+                <p class="rag-hero-description">
+                    A way to search for information based on meaning,
+                    not only on the exact words in a query.
+                </p>
+
+            </header>
+
+
+            <!-- Idea -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    01
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        THE IDEA
+                    </p>
+
+                    <h2>
+                        What is Semantic Search?
+                    </h2>
+
+                    <p>
+                        Traditional search often looks for matching
+                        words or keywords.
+                    </p>
+
+                    <p>
+                        Semantic Search tries to understand the meaning
+                        behind a query and find information that is
+                        related to that meaning.
+                    </p>
+
+                    <p>
+                        Embeddings and vector search are commonly used
+                        to support this type of search.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Keyword vs Semantic -->
+            <section class="rag-section rag-flow-section">
+
+                <div class="rag-section-number">
+                    02
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        A SIMPLE EXAMPLE
+                    </p>
+
+                    <h2>
+                        Keywords vs. meaning.
+                    </h2>
+
+                    <p>
+                        Imagine searching a company knowledge base
+                        with this question:
+                    </p>
+
+                    <div class="rag-notes">
+
+                        <p>
+                            <strong>
+                                "How do I reset my password?"
+                            </strong>
+                        </p>
+
+                    </div>
+
+
+                    <div class="rag-concepts">
+
+                        <div class="rag-concept">
+
+                            <span>01</span>
+
+                            <div>
+                                <h3>Keyword Search</h3>
+
+                                <p>
+                                    Looks for matching words such as
+                                    "reset" and "password".
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>02</span>
+
+                            <div>
+                                <h3>Semantic Search</h3>
+
+                                <p>
+                                    Can find related wording such as
+                                    "change my login credentials".
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Behind the scenes -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    03
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        BEHIND THE SCENES
+                    </p>
+
+                    <h2>
+                        What happens behind the scenes?
+                    </h2>
+
+
+                    <div class="rag-flow">
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                01
+                            </span>
+
+                            <div>
+                                <strong>User Query</strong>
+                                <p>
+                                    The user asks a question in natural language.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                02
+                            </span>
+
+                            <div>
+                                <strong>Embedding</strong>
+                                <p>
+                                    The query is converted into a vector.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                03
+                            </span>
+
+                            <div>
+                                <strong>Vector Search</strong>
+                                <p>
+                                    The query vector is compared with stored vectors.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                04
+                            </span>
+
+                            <div>
+                                <strong>Relevant Results</strong>
+                                <p>
+                                    Results related to the query are returned.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Important distinction -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    04
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        AN IMPORTANT CONNECTION
+                    </p>
+
+                    <h2>
+                        Embeddings, vectors, and search.
+                    </h2>
+
+
+                    <div class="rag-concepts">
+
+                        <div class="rag-concept">
+
+                            <span>01</span>
+
+                            <div>
+                                <h3>Embedding</h3>
+
+                                <p>
+                                    Converts information into a numerical
+                                    representation.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>02</span>
+
+                            <div>
+                                <h3>Vector</h3>
+
+                                <p>
+                                    The list of numbers produced by an
+                                    embedding model.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>03</span>
+
+                            <div>
+                                <h3>Vector Search</h3>
+
+                                <p>
+                                    Compares vectors to find similar
+                                    information.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>04</span>
+
+                            <div>
+                                <h3>Semantic Search</h3>
+
+                                <p>
+                                    Uses these techniques to search based
+                                    on meaning and relationships.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RAG -->
+            <section class="rag-section rag-flow-section">
+
+                <div class="rag-section-number">
+                    05
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        SEMANTIC SEARCH + RAG
+                    </p>
+
+                    <h2>
+                        Why is it useful for RAG?
+                    </h2>
+
+                    <p>
+                        A RAG system needs to retrieve useful information
+                        before asking an LLM to generate an answer.
+                    </p>
+
+                    <p>
+                        Semantic search can help retrieve relevant
+                        information even when the user's wording does
+                        not exactly match the wording in the documents.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- My Notes -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    06
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        MY NOTES
+                    </p>
+
+                    <h2>
+                        What I understand so far.
+                    </h2>
+
+                    <div class="rag-notes">
+
+                        <p>
+                            Keyword search focuses mainly on matching words.
+                        </p>
+
+                        <p>
+                            Semantic Search focuses on relationships
+                            and meaning.
+                        </p>
+
+                        <p>
+                            Embeddings help represent meaning as vectors.
+                        </p>
+
+                        <p>
+                            Vector Search helps compare those vectors.
+                        </p>
+
+                        <p>
+                            The next concept I want to understand is
+                            <strong>LLMs</strong>.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <div class="rag-back">
+
+                <a href="generative-ai.html">
+                    ← Back to Generative AI
+                </a>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-left">
+            <span>© 2026 Geeta Bhimsen Maharana</span>
+        </div>
+
+        <div class="footer-center">
+            <span>Boston, MA</span>
+        </div>
+
+        <div class="footer-links">
+
+            <a href="https://www.linkedin.com/in/geetabhimsenmaharana/"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

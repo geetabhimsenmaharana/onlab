@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    ```
+    <title>Embeddings — onLab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    ```
+
+</head>
+
+<body>
+
+    ```
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                onLab
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="learning.html">Learn</a></li>
+                <li><a href="experiment.html">Experiment</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <article class="rag-page">
+
+            <!-- Hero -->
+            <header class="rag-hero">
+
+                <div class="rag-hero-top">
+
+                    <span class="rag-label">
+                        GENERATIVE AI
+                    </span>
+
+                    <span class="rag-number">
+                        02
+                    </span>
+
+                </div>
+
+                <h1>
+                    Understanding<br>
+                    <span>Embeddings.</span>
+                </h1>
+
+                <p class="rag-hero-description">
+                    A way to represent text, images, or other information
+                    as numbers so a computer can work with their meaning
+                    and relationships.
+                </p>
+
+            </header>
+
+
+            <!-- What are Embeddings -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    01
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        THE IDEA
+                    </p>
+
+                    <h2>
+                        What is an embedding?
+                    </h2>
+
+                    <p>
+                        An embedding is a numerical representation of
+                        information. A piece of text, for example, can
+                        be converted into a list of numbers called a
+                        vector.
+                    </p>
+
+                    <p>
+                        The numbers themselves do not have a simple
+                        human-readable meaning. Instead, the vector
+                        represents patterns and relationships learned
+                        by the embedding model.
+                    </p>
+
+                    <p>
+                        This allows a computer to compare pieces of
+                        information based on how similar their
+                        representations are.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Simple Example -->
+            <section class="rag-section rag-flow-section">
+
+                <div class="rag-section-number">
+                    02
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        A SIMPLE EXAMPLE
+                    </p>
+
+                    <h2>
+                        Think of it like a map.
+                    </h2>
+
+                    <p>
+                        Imagine putting every word or sentence on a
+                        giant map. Information with similar meaning
+                        can appear closer together, while information
+                        with different meaning can appear farther apart.
+                    </p>
+
+
+                    <div class="rag-flow">
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                01
+                            </span>
+
+                            <div>
+                                <strong>King</strong>
+                                <p>
+                                    A word describing a type of person.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                02
+                            </span>
+
+                            <div>
+                                <strong>Queen</strong>
+                                <p>
+                                    Related to the concept of king.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                03
+                            </span>
+
+                            <div>
+                                <strong>Pizza</strong>
+                                <p>
+                                    A very different concept.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-notes">
+
+                        <p>
+                            In a real embedding space, these relationships
+                            are represented using many numerical dimensions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Behind the Scenes -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    03
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        BEHIND THE SCENES
+                    </p>
+
+                    <h2>
+                        How does text become numbers?
+                    </h2>
+
+
+                    <div class="rag-concepts">
+
+                        <div class="rag-concept">
+
+                            <span>01</span>
+
+                            <div>
+                                <h3>Text</h3>
+
+                                <p>
+                                    We start with a word, sentence,
+                                    paragraph, or document.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>02</span>
+
+                            <div>
+                                <h3>Embedding Model</h3>
+
+                                <p>
+                                    The embedding model processes the
+                                    input and creates a numerical
+                                    representation.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>03</span>
+
+                            <div>
+                                <h3>Vector</h3>
+
+                                <p>
+                                    The result is a list of numbers
+                                    representing the input.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>04</span>
+
+                            <div>
+                                <h3>Comparison</h3>
+
+                                <p>
+                                    Vectors can be compared to find
+                                    information with similar meaning.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-notes">
+
+                        <p>
+                            For example:
+                        </p>
+
+                        <p>
+                            <strong>
+                                "Solar panels produce electricity."
+                            </strong>
+                        </p>
+
+                        <p>
+                            The embedding model converts this sentence
+                            into a vector containing many numbers.
+                        </p>
+
+                        <p>
+                            A simplified example might look like:
+                        </p>
+
+                        <p>
+                            <strong>
+                                [0.24, -0.18, 0.76, 0.45, ...]
+                            </strong>
+                        </p>
+
+                        <p>
+                            Real embedding vectors usually contain
+                            hundreds or thousands of dimensions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Why Embeddings -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    04
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        WHY IT MATTERS
+                    </p>
+
+                    <h2>
+                        Why do we need embeddings?
+                    </h2>
+
+                    <p>
+                        Computers work very well with numbers. By
+                        converting information into vectors, we can
+                        use mathematical methods to compare and search
+                        large amounts of information.
+                    </p>
+
+
+                    <div class="rag-concepts">
+
+                        <div class="rag-concept">
+
+                            <span>01</span>
+
+                            <div>
+                                <h3>Semantic Search</h3>
+
+                                <p>
+                                    Find information based on meaning,
+                                    not just exact keywords.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>02</span>
+
+                            <div>
+                                <h3>Recommendations</h3>
+
+                                <p>
+                                    Find items that are similar to
+                                    something a user already likes.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>03</span>
+
+                            <div>
+                                <h3>RAG</h3>
+
+                                <p>
+                                    Find relevant documents before
+                                    generating an AI response.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>04</span>
+
+                            <div>
+                                <h3>Clustering</h3>
+
+                                <p>
+                                    Group information that has similar
+                                    patterns or characteristics.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Embeddings and RAG -->
+            <section class="rag-section rag-flow-section">
+
+                <div class="rag-section-number">
+                    05
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        EMBEDDINGS + RAG
+                    </p>
+
+                    <h2>
+                        Where does it fit in RAG?
+                    </h2>
+
+                    <p>
+                        Embeddings are one of the important building
+                        blocks of a RAG system.
+                    </p>
+
+
+                    <div class="rag-flow">
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                01
+                            </span>
+
+                            <div>
+                                <strong>Document</strong>
+                                <p>
+                                    A document is split into smaller
+                                    pieces called chunks.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                02
+                            </span>
+
+                            <div>
+                                <strong>Embedding</strong>
+                                <p>
+                                    Each chunk is converted into a vector.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                03
+                            </span>
+
+                            <div>
+                                <strong>Vector Database</strong>
+                                <p>
+                                    The vectors are stored for searching.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                04
+                            </span>
+
+                            <div>
+                                <strong>Search</strong>
+                                <p>
+                                    A user's question is compared with
+                                    stored vectors to find relevant content.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- My Notes -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    06
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        MY NOTES
+                    </p>
+
+                    <h2>
+                        What I understand so far.
+                    </h2>
+
+                    <div class="rag-notes">
+
+                        <p>
+                            An embedding converts information into
+                            a numerical representation called a vector.
+                        </p>
+
+                        <p>
+                            Similar meaning can be represented by
+                            vectors that are closer together in the
+                            embedding space.
+                        </p>
+
+                        <p>
+                            Embeddings make it possible to search and
+                            compare information using mathematical
+                            similarity.
+                        </p>
+
+                        <p>
+                            In RAG, embeddings help the system find
+                            relevant information before the LLM
+                            generates an answer.
+                        </p>
+
+                        <p>
+                            The next concept I want to understand is
+                            <strong>Vector Search</strong>.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Back -->
+            <div class="rag-back">
+
+                <a href="generative-ai.html">
+                    ← Back to Generative AI
+                </a>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-left">
+            <span>© 2026 Geeta Bhimsen Maharana</span>
+        </div>
+
+        <div class="footer-center">
+            <span>Boston, MA</span>
+        </div>
+
+        <div class="footer-links">
+
+            <a href="https://www.linkedin.com/in/geetabhimsenmaharana/"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </footer>
+    ```
+
+</body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vector Search — onLab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✦</span>
+                onLab
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="learning.html">Learn</a></li>
+                <li><a href="experiment.html">Experiment</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <article class="rag-page">
+
+            <!-- Hero -->
+            <header class="rag-hero">
+
+                <div class="rag-hero-top">
+
+                    <span class="rag-label">
+                        GENERATIVE AI
+                    </span>
+
+                    <span class="rag-number">
+                        03
+                    </span>
+
+                </div>
+
+                <h1>
+                    Vector<br>
+                    <span>Search.</span>
+                </h1>
+
+                <p class="rag-hero-description">
+                    A way to find information by comparing vectors
+                    and looking for the closest matches.
+                </p>
+
+            </header>
+
+
+            <!-- What is Vector Search -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    01
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        THE IDEA
+                    </p>
+
+                    <h2>
+                        What is Vector Search?
+                    </h2>
+
+                    <p>
+                        Vector Search is a way of finding information
+                        by comparing numerical representations called
+                        vectors.
+                    </p>
+
+                    <p>
+                        Instead of looking only for the exact words
+                        in a question, vector search looks for vectors
+                        that are mathematically similar.
+                    </p>
+
+                    <p>
+                        This makes it useful when we want to find
+                        information that has a similar meaning, even
+                        when the exact words are different.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Simple Example -->
+            <section class="rag-section rag-flow-section">
+
+                <div class="rag-section-number">
+                    02
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        A SIMPLE EXAMPLE
+                    </p>
+
+                    <h2>
+                        Imagine a map.
+                    </h2>
+
+                    <p>
+                        Imagine that every piece of information has a
+                        location on a giant map.
+                    </p>
+
+                    <p>
+                        A user asks:
+                    </p>
+
+                    <div class="rag-notes">
+
+                        <p>
+                            <strong>
+                                "How can I generate electricity from sunlight?"
+                            </strong>
+                        </p>
+
+                    </div>
+
+                    <p>
+                        The system searches the vector space for
+                        information located close to the question.
+                    </p>
+
+                    <div class="rag-notes">
+
+                        <p>
+                            <strong>
+                                "Solar panels convert sunlight into electricity."
+                            </strong>
+                        </p>
+
+                    </div>
+
+                    <p>
+                        The words are different, but the ideas are
+                        closely related.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- How it works -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    03
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        THE FLOW
+                    </p>
+
+                    <h2>
+                        How it works.
+                    </h2>
+
+
+                    <div class="rag-flow">
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                01
+                            </span>
+
+                            <div>
+                                <strong>User Question</strong>
+                                <p>
+                                    The user asks a question.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                02
+                            </span>
+
+                            <div>
+                                <strong>Create Query Vector</strong>
+                                <p>
+                                    The question is converted into an embedding.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                03
+                            </span>
+
+                            <div>
+                                <strong>Compare Vectors</strong>
+                                <p>
+                                    The query vector is compared with stored vectors.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                04
+                            </span>
+
+                            <div>
+                                <strong>Return Matches</strong>
+                                <p>
+                                    The closest or most similar results are returned.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Similarity -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    04
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        THE MATH
+                    </p>
+
+                    <h2>
+                        How do we know what is close?
+                    </h2>
+
+                    <p>
+                        Vector search uses mathematical similarity
+                        measures to compare vectors.
+                    </p>
+
+                    <div class="rag-concepts">
+
+                        <div class="rag-concept">
+
+                            <span>01</span>
+
+                            <div>
+                                <h3>Cosine Similarity</h3>
+
+                                <p>
+                                    Compares the angle between two
+                                    vectors.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>02</span>
+
+                            <div>
+                                <h3>Distance</h3>
+
+                                <p>
+                                    Measures how far apart two vectors
+                                    are in vector space.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>03</span>
+
+                            <div>
+                                <h3>Similarity Score</h3>
+
+                                <p>
+                                    A numerical value can indicate how
+                                    closely two vectors match.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-concept">
+
+                            <span>04</span>
+
+                            <div>
+                                <h3>Top Results</h3>
+
+                                <p>
+                                    The system can return the closest
+                                    matching pieces of information.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RAG -->
+            <section class="rag-section rag-flow-section">
+
+                <div class="rag-section-number">
+                    05
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        VECTOR SEARCH + RAG
+                    </p>
+
+                    <h2>
+                        Where does it fit?
+                    </h2>
+
+                    <p>
+                        In a RAG system, vector search helps retrieve
+                        relevant information before the LLM generates
+                        its answer.
+                    </p>
+
+
+                    <div class="rag-flow">
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                01
+                            </span>
+
+                            <div>
+                                <strong>Documents</strong>
+                                <p>
+                                    Information is split into chunks.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                02
+                            </span>
+
+                            <div>
+                                <strong>Embeddings</strong>
+                                <p>
+                                    Chunks are converted into vectors.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                03
+                            </span>
+
+                            <div>
+                                <strong>Vector Search</strong>
+                                <p>
+                                    Relevant vectors are found.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rag-flow-line"></div>
+
+
+                        <div class="rag-step">
+
+                            <span class="rag-step-number">
+                                04
+                            </span>
+
+                            <div>
+                                <strong>LLM</strong>
+                                <p>
+                                    Retrieved information helps generate the answer.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- My Notes -->
+            <section class="rag-section">
+
+                <div class="rag-section-number">
+                    06
+                </div>
+
+                <div class="rag-section-content">
+
+                    <p class="rag-section-label">
+                        MY NOTES
+                    </p>
+
+                    <h2>
+                        What I understand so far.
+                    </h2>
+
+                    <div class="rag-notes">
+
+                        <p>
+                            Embeddings turn information into vectors.
+                        </p>
+
+                        <p>
+                            Vector Search compares those vectors
+                            to find similar information.
+                        </p>
+
+                        <p>
+                            The search can find related information
+                            even when the exact words are different.
+                        </p>
+
+                        <p>
+                            Vector Search is an important part of
+                            many RAG systems.
+                        </p>
+
+                        <p>
+                            The next concept I want to understand is
+                            <strong>Semantic Search</strong>.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Back -->
+            <div class="rag-back">
+
+                <a href="generative-ai.html">
+                    ← Back to Generative AI
+                </a>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-left">
+            <span>© 2026 Geeta Bhimsen Maharana</span>
+        </div>
+
+        <div class="footer-center">
+            <span>Boston, MA</span>
+        </div>
+
+        <div class="footer-links">
+
+            <a href="https://www.linkedin.com/in/geetabhimsenmaharana/"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

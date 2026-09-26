@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Connect with Geeta through LinkedIn."
+    >
+
+    <title>Connect — onLab</title>
+
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Styles -->
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <div id="header"></div>
+
+
+    <!-- Main Content -->
+
+    <main>
+
+        <section class="connect-page">
+
+            <div class="connect-intro">
+
+                <p class="connect-label">
+                    CONNECT
+                </p>
+
+                <h1>
+                    Let's<br>
+                    <span>connect.</span>
+                </h1>
+
+                <p>
+                    If you found something interesting here,
+                    I'd be happy to connect and exchange ideas
+                    around technology, AI, data, and learning.
+                </p>
+
+            </div>
+
+
+            <section
+                class="connect-form-section"
+                aria-label="LinkedIn connection"
+            >
+
+                <form
+                    id="connectForm"
+                    class="connect-form"
+                    novalidate
+                >
+
+                    <div class="form-field">
+
+                        <label for="name">
+                            NAME
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            autocomplete="name"
+                            minlength="2"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="linkedin">
+                            LINKEDIN PROFILE
+                        </label>
+
+                        <input
+                            type="url"
+                            id="linkedin"
+                            name="linkedin"
+                            placeholder="https://www.linkedin.com/in/your-name"
+                            autocomplete="url"
+                            required
+                        >
+
+                        <small>
+                            Enter your public LinkedIn profile URL.
+                        </small>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="connect-button"
+                    >
+
+                        <span>
+                            Continue to LinkedIn
+                        </span>
+
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+
+                    </button>
+
+
+                    <p
+                        id="formMessage"
+                        class="form-message"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+
+                <div class="connect-note">
+
+                    <span>
+                        01
+                    </span>
+
+                    <p>
+                        This page does not collect or store your LinkedIn
+                        credentials. The profile link opens directly in a new tab.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <div id="footer"></div>
+
+
+    <!-- Load Header and Footer -->
+
+    <script>
+
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+
+                document.getElementById("header").innerHTML = data;
+
+            });
+
+
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+
+                document.getElementById("footer").innerHTML = data;
+
+            });
+
+    </script>
+
+
+    <!-- JavaScript -->
+
+    <script
+        src="../script.js"
+        defer
+    ></script>
+
+
+</body>
+
+</html>

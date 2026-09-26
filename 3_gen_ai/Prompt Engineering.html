@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Prompt Engineering — onLab</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet"
+>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✦</span>
+            onLab
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="learning.html">Learn</a></li>
+            <li><a href="experiment.html">Experiment</a></li>
+            <li><a href="connect.html">Connect</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<!-- Main -->
+<main>
+
+    <article class="rag-page">
+
+        <!-- Hero -->
+        <header class="rag-hero">
+
+            <div class="rag-hero-top">
+
+                <span class="rag-label">
+                    GENERATIVE AI
+                </span>
+
+                <span class="rag-number">
+                    06
+                </span>
+
+            </div>
+
+            <h1>
+                Prompt<br>
+                <span>Engineering.</span>
+            </h1>
+
+            <p class="rag-hero-description">
+                The practice of designing clear instructions
+                that help an AI model produce useful and
+                consistent results.
+            </p>
+
+        </header>
+
+
+        <!-- What is Prompt Engineering -->
+        <section class="rag-section">
+
+            <div class="rag-section-number">
+                01
+            </div>
+
+            <div class="rag-section-content">
+
+                <p class="rag-section-label">
+                    THE IDEA
+                </p>
+
+                <h2>
+                    What is Prompt Engineering?
+                </h2>
+
+                <p>
+                    A prompt is the instruction or input we give
+                    to an AI model.
+                </p>
+
+                <p>
+                    Prompt Engineering is the practice of designing
+                    that instruction carefully so the model has
+                    enough information to understand the task.
+                </p>
+
+                <p>
+                    A prompt can include the task, context, examples,
+                    constraints, and the format we want in the answer.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Simple Example -->
+        <section class="rag-section rag-flow-section">
+
+            <div class="rag-section-number">
+                02
+            </div>
+
+            <div class="rag-section-content">
+
+                <p class="rag-section-label">
+                    A SIMPLE EXAMPLE
+                </p>
+
+                <h2>
+                    Be clear about the task.
+                </h2>
+
+                <p>
+                    Imagine asking an AI:
+                </p>
+
+                <div class="rag-notes">
+
+                    <p>
+                        <strong>
+                            "Tell me about solar energy."
+                        </strong>
+                    </p>
+
+                </div>
+
+                <p>
+                    The model has many possible ways to answer.
+                </p>
+
+                <p>
+                    We can make the request more specific:
+                </p>
+
+                <div class="rag-notes">
+
+                    <p>
+                        <strong>
+                            "Explain how solar panels generate
+                            electricity in five simple bullet
+                            points for a beginner."
+                        </strong>
+                    </p>
+
+                </div>
+
+                <p>
+                    The second prompt gives the model more
+                    information about the task and the expected
+                    output.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Prompt Structure -->
+        <section class="rag-section">
+
+            <div class="rag-section-number">
+                03
+            </div>
+
+            <div class="rag-section-content">
+
+                <p class="rag-section-label">
+                    PROMPT STRUCTURE
+                </p>
+
+                <h2>
+                    What can a prompt contain?
+                </h2>
+
+
+                <div class="rag-concepts">
+
+                    <div class="rag-concept">
+
+                        <span>01</span>
+
+                        <div>
+                            <h3>Role</h3>
+
+                            <p>
+                                Provides guidance about how the
+                                model should approach the task.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-concept">
+
+                        <span>02</span>
+
+                        <div>
+                            <h3>Task</h3>
+
+                            <p>
+                                Clearly explains what the model
+                                needs to do.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-concept">
+
+                        <span>03</span>
+
+                        <div>
+                            <h3>Context</h3>
+
+                            <p>
+                                Gives the model useful background
+                                information.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-concept">
+
+                        <span>04</span>
+
+                        <div>
+                            <h3>Output Format</h3>
+
+                            <p>
+                                Describes how the final response
+                                should be structured.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Prompt Anatomy -->
+        <section class="rag-section rag-flow-section">
+
+            <div class="rag-section-number">
+                04
+            </div>
+
+            <div class="rag-section-content">
+
+                <p class="rag-section-label">
+                    PROMPT ANATOMY
+                </p>
+
+                <h2>
+                    Putting the pieces together.
+                </h2>
+
+                <div class="rag-notes">
+
+                    <p>
+                        <strong>
+                            Role:
+                        </strong>
+                        You are a data analyst.
+                    </p>
+
+                    <p>
+                        <strong>
+                            Task:
+                        </strong>
+                        Analyze the following sales data.
+                    </p>
+
+                    <p>
+                        <strong>
+                            Context:
+                        </strong>
+                        The data contains monthly sales
+                        from January to December.
+                    </p>
+
+                    <p>
+                        <strong>
+                            Constraint:
+                        </strong>
+                        Identify the three largest changes.
+                    </p>
+
+                    <p>
+                        <strong>
+                            Output:
+                        </strong>
+                        Return the result as a simple table.
+                    </p>
+
+                </div>
+
+                <p>
+                    Instead of giving the model one short sentence,
+                    we provide the information it needs to perform
+                    the task more clearly.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Techniques -->
+        <section class="rag-section">
+
+            <div class="rag-section-number">
+                05
+            </div>
+
+            <div class="rag-section-content">
+
+                <p class="rag-section-label">
+                    TECHNIQUES
+                </p>
+
+                <h2>
+                    What I'm learning.
+                </h2>
+
+
+                <div class="rag-concepts">
+
+                    <div class="rag-concept">
+
+                        <span>01</span>
+
+                        <div>
+                            <h3>Zero-Shot</h3>
+
+                            <p>
+                                Ask the model to perform a task
+                                without providing examples.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-concept">
+
+                        <span>02</span>
+
+                        <div>
+                            <h3>Few-Shot</h3>
+
+                            <p>
+                                Provide examples that show the
+                                model what the desired output looks like.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-concept">
+
+                        <span>03</span>
+
+                        <div>
+                            <h3>Constraints</h3>
+
+                            <p>
+                                Define boundaries such as length,
+                                format, audience, or required content.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-concept">
+
+                        <span>04</span>
+
+                        <div>
+                            <h3>Iteration</h3>
+
+                            <p>
+                                Test the prompt, evaluate the result,
+                                and improve the instruction.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Behind the Scenes -->
+        <section class="rag-section">
+
+            <div class="rag-section-number">
+                06
+            </div>
+
+            <div class="rag-section-content">
+
+                <p class="rag-section-label">
+                    BEHIND THE SCENES
+                </p>
+
+                <h2>
+                    What happens after I send a prompt?
+                </h2>
+
+
+                <div class="rag-flow">
+
+                    <div class="rag-step">
+
+                        <span class="rag-step-number">
+                            01
+                        </span>
+
+                        <div>
+                            <strong>Prompt</strong>
+                            <p>
+                                The user provides an instruction
+                                and optional context.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-flow-line"></div>
+
+
+                    <div class="rag-step">
+
+                        <span class="rag-step-number">
+                            02
+                        </span>
+
+                        <div>
+                            <strong>Tokens</strong>
+                            <p>
+                                The input is processed as tokens
+                                that the model can work with.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-flow-line"></div>
+
+
+                    <div class="rag-step">
+
+                        <span class="rag-step-number">
+                            03
+                        </span>
+
+                        <div>
+                            <strong>Model</strong>
+                            <p>
+                                The model processes the input and
+                                predicts an appropriate continuation.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-flow-line"></div>
+
+
+                    <div class="rag-step">
+
+                        <span class="rag-step-number">
+                            04
+                        </span>
+
+                        <div>
+                            <strong>Output</strong>
+                            <p>
+                                The model generates the response
+                                based on the input and its learned patterns.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Practical Example -->
+        <section class="rag-section rag-flow-section">
+
+            <div class="rag-section-number">
+                07
+            </div>
+
+            <div class="rag-section-content">
+
+                <p class="rag-section-label">
+                    PRACTICAL EXAMPLE
+                </p>
+
+                <h2>
+                    From vague to specific.
+                </h2>
+
+                <p>
+                    Suppose I want an AI to explain a Python concept.
+                </p>
+
+                <div class="rag-notes">
+
+                    <p>
+                        <strong>
+                            Vague:
+                        </strong>
+                    </p>
+
+                    <p>
+                        "Explain Python dictionaries."
+                    </p>
+
+                </div>
+
+
+                <div class="rag-notes">
+
+                    <p>
+                        <strong>
+                            More specific:
+                        </strong>
+                    </p>
+
+                    <p>
+                        "Explain Python dictionaries to a beginner.
+                        Use a simple real-world analogy, show one
+                        basic Python example, and explain the example
+                        line by line."
+                    </p>
+
+                </div>
+
+                <p>
+                    The second prompt gives the model more direction
+                    about the audience, explanation style, and output.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Important Idea -->
+        <section class="rag-section">
+
+            <div class="rag-section-number">
+                08
+            </div>
+
+            <div class="rag-section-content">
+
+                <p class="rag-section-label">
+                    IMPORTANT IDEA
+                </p>
+
+                <h2>
+                    Prompting is an iterative process.
+                </h2>
+
+                <div class="rag-flow">
+
+                    <div class="rag-step">
+
+                        <span class="rag-step-number">
+                            01
+                        </span>
+
+                        <div>
+                            <strong>Write</strong>
+                            <p>
+                                Create the first version of the prompt.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-flow-line"></div>
+
+
+                    <div class="rag-step">
+
+                        <span class="rag-step-number">
+                            02
+                        </span>
+
+                        <div>
+                            <strong>Test</strong>
+                            <p>
+                                Run the prompt and examine the output.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-flow-line"></div>
+
+
+                    <div class="rag-step">
+
+                        <span class="rag-step-number">
+                            03
+                        </span>
+
+                        <div>
+                            <strong>Evaluate</strong>
+                            <p>
+                                Check whether the result meets the goal.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rag-flow-line"></div>
+
+
+                    <div class="rag-step">
+
+                        <span class="rag-step-number">
+                            04
+                        </span>
+
+                        <div>
+                            <strong>Improve</strong>
+                            <p>
+                                Change the prompt and test again.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- My Notes -->
+        <section class="rag-section">
+
+            <div class="rag-section-number">
+                09
+            </div>
+
+            <div class="rag-section-content">
+
+                <p class="rag-section-label">
+                    MY NOTES
+                </p>
+
+                <h2>
+                    What I understand so far.
+                </h2>
+
+                <div class="rag-notes">
+
+                    <p>
+                        A prompt is the instruction or input
+                        given to an AI model.
+                    </p>
+
+                    <p>
+                        Prompt Engineering is about designing
+                        clear and useful instructions.
+                    </p>
+
+                    <p>
+                        Context, examples, constraints, and
+                        output format can make a prompt more specific.
+                    </p>
+
+                    <p>
+                        Different prompts can produce different
+                        outputs from the same model.
+                    </p>
+
+                    <p>
+                        Prompting is often an iterative process:
+                        write, test, evaluate, and improve.
+                    </p>
+
+                    <p>
+                        The next concept I want to explore is
+                        <strong>AI Agents</strong>.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Back -->
+        <div class="rag-back">
+
+            <a href="generative-ai.html">
+                ← Back to Generative AI
+            </a>
+
+        </div>
+
+    </article>
+
+</main>
+
+
+<!-- Footer -->
+<footer>
+
+    <div class="footer-left">
+        <span>© 2026 Geeta Bhimsen Maharana</span>
+    </div>
+
+    <div class="footer-center">
+        <span>Boston, MA</span>
+    </div>
+
+    <div class="footer-links">
+
+        <a
+            href="https://www.linkedin.com/in/geetabhimsenmaharana/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            LinkedIn
+        </a>
+
+        <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+</footer>
+```
+
+</body>
+</html>
